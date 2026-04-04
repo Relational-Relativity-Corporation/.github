@@ -4,7 +4,7 @@
 
 Metatron Dynamics develops systems that identify regime shifts before conventional monitoring detects failure. The framework shows that instability arises when information processing begins without a declared operational domain. ABRCE formalizes domain declaration and detects approach to domain boundaries before failure cascades develop.
 
-→ [relationalrelativity.dev](https://relationalrelativity.dev) &nbsp;·&nbsp; *Robin Macomber, Founder — Bruce Stephenson, CTO, Energy Physics*
+→ [Metatron Dynamics](https://relationalrelativity.dev) &nbsp;·&nbsp; *Robin Macomber, Founder — Bruce Stephenson, CTO, Energy Physics*
 
 ---
 
