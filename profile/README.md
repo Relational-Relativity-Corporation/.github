@@ -8,47 +8,48 @@ Metatron Dynamics has identified the primitive that mathematics derives from obs
 
 ---
 
-## The Kernel — [abr-kernel](https://github.com/Relational-Relativity-Corporation/abr-kernel) · Kernel V9
+## The Kernel — [abr-kernel](https://github.com/Relational-Relativity-Corporation/abr-kernel) · Kernel V10
 
-The canonical declaration of the ABR/ABRCE kernel: operator constraints, role separation protocol, reference implementation in Rust, derived invariants, validation record, and provenance discipline.
+The canonical declaration of the ABR kernel: operator constraints, role separation protocol, reference implementation in Rust, derived invariants, validation record, and provenance discipline.
 
-**The foundational primitive is a directed relation declared from observable information.** A numerical value is not itself a primitive; it is the projection of an observed relational distinction through a declared measurement mapping M.
+**Relation is the primitive, derived from observation:** a directed relation declared from observable information. A numerical value is not itself a primitive; it is the projection of an observed relational distinction through a declared measurement mapping M.
+
+**Three ground variables, one relational object.** Energy (how much a relation changes), freedom (how many independent ways relations vary) and connection (shared relational structure persisting through evolution) are distinct, and all three are read from the same object: the pattern of 2×2 minors between relations. Per minor, freedom and connection are complementary; energy moves minors toward or across zero.
+
+**Simultaneity.** All operators and all variables occur together. The order of the operators and the sequence of observations are orders of analysis. A relational field needs at least two consecutive registrations; a single snapshot is insufficient information.
 
 ```
 Observable relation → M → projection in D → declared topology → operators → result → comparison with observables
 
-Primary kernel:   E_primary = Σ(Δ(x))
-ABR kernel:       E = R(B(A(x)), ρ(A(x)))        A → B → R
-Persistence:      A_p → B_p → R_p  over a declared pair of sequential observations
+Operators:   A(x)[e] = x[s] − x[t]     B(g)[e] = g[e] + Σ_succ g     Ξ(g)[e] = Σ_succ g − Σ_pred g
+Minors:      m_ij(e,f) = A[i][e]·A[j][f] − A[j][e]·A[i][f]
+             held unresolved → connection   held resolved → freedom   crossing → reorganization
+Energy:      ε[e] = |A(c)[e]|  for the declared carrier c
 
 D := { x ∈ ℝⁿ | n < ∞  and  |x[i]| < ∞  ∀ i }
 All framework claims are bounded over D. No claim beyond D.
 ```
 
-The operators are domain and scale invariant: they produce the same classes of output (ε[e], τ[v], Φ[v], 𝟙[e], θ[e], J[v]) at every declared region from Primary through Planetary. What changes across regions is the declared measurement mapping M, not the operators.
+The kernel expresses energy, freedom and connection as tunneling, superposition and entanglement. When a declared topology does not let a variable be calculated, the result is a finding about the declaration (the Primary Region, or a domain not fully declared), never a statement that the variable is absent.
 
-**Relational Primitive Provenance Invariant (RPPI).** Every admitted value, operation, and result must have a continuous, verifiable provenance path to an Origin-declared observable relation. The kernel separates the *provenance label*, the *declaration record*, and the *calculation record*. A result is admissible only when an independent reconstruction can follow its derivation back to declared observables.
+**Relational Primitive Provenance Invariant (RPPI).** Every admitted value, operation, and result must have a continuous, verifiable provenance path to an Origin-declared observable relation.
 
 ### Current status
 
 | | |
 |---|---|
-| Package | `abr-kernel` **9.0.0** (crate `abr_kernel`), Rust, no external dependencies, Apache-2.0 |
-| Operators | Formulas and public API unchanged from the frozen V8 implementation |
-| RPPI milestones 1–3 | Specification, conformance suite, and declaration/calculation record distinction, all accepted by the Verifier |
-| Bounded admission interface | `provenance.rs`, `provenanced_exec.rs`, `admission.rs`. The four RPPI failure modes (missing, fabricated, disconnected, misattributed) are enforced within the supported scope |
-| Diagnostic execution | `diagnostic_exec.rs` runs A → B → R and persistence over experimental fields, keeping observed and proposed relations distinct |
-| Tests | 126 passing: 61 library, 35 V9 conformance, 12 admission, 13 diagnostic execution, 3 demo, 2 doctests |
-| Still open | ABR and persistence admission, other Layer 3 quantities, other M kinds, independent IRRS verification from a distinct frame |
+| Package | `abr-kernel` **10.0.0** (crate `abr_kernel`), Rust, no external dependencies, Apache-2.0 |
+| V10 | Ground variables (`ground_variables.rs`), relational field (`relational_field.rs`), parameter-free circulation Ξ. The weighting parameters ρ and χ are retired from V10 |
+| V9 record | V9 operators and readers unchanged and retained for V9 work; every transition kept in the commit history |
+| Tests | 153 passing, including a clean-room build; synthetic fixtures only |
+| Next | Invariant tests against registered data (structural consistency, I-SC) |
 
 ```
 git clone https://github.com/Relational-Relativity-Corporation/abr-kernel.git
 cd abr-kernel && cargo test
 ```
 
-Start with [`docs/kernel/kernel_reference.md`](https://github.com/Relational-Relativity-Corporation/abr-kernel/blob/main/docs/kernel/kernel_reference.md).
-
-**Kernel V10 (in development).** The rewrite declares relation as the primitive derived from observation, and energy, connection, and freedom as the ground variables every analysis reads. Most V10 items are still proposed, awaiting Origin and Verifier review.
+Start with [`docs/kernel/V10_README.md`](https://github.com/Relational-Relativity-Corporation/abr-kernel/blob/main/docs/kernel/V10_README.md) and [`docs/kernel/kernel_reference.md`](https://github.com/Relational-Relativity-Corporation/abr-kernel/blob/main/docs/kernel/kernel_reference.md).
 
 ---
 
