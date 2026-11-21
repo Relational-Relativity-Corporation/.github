@@ -2,7 +2,7 @@
 
 **Domain-declaration and relational-field detection for complex operational systems.**
 
-Metatron Dynamics develops systems that identify regime shifts before conventional monitoring detects failure. The framework shows that instability arises when information processing begins without a declared operational domain. The ABR kernel formalizes domain declaration and requires every result to trace back to a declared observable relation.
+Metatron Dynamics has identified the primitive that mathematics derives from observation: **a directed relation declared from observable information**. Objects are read from relations, not the reverse. Alongside it, three variables are present in every observation: **energy** (how much a relation changes), **connection** (how much holds together as it changes), and **freedom** (how many independent ways it varies). Their absence is never observed; what varies, and what we measure, is their degree at a declared resolution. The ABR kernel expresses them as tunneling, entanglement, and superposition, and requires every result to trace back to a declared observable relation.
 
 → [Metatron Dynamics](https://relationalrelativity.dev) &nbsp;·&nbsp; arXiv:2601.22389 &nbsp;·&nbsp; *Robin Macomber, Founder*
 
@@ -47,6 +47,8 @@ cd abr-kernel && cargo test
 ```
 
 Start with [`docs/kernel/kernel_reference.md`](https://github.com/Relational-Relativity-Corporation/abr-kernel/blob/main/docs/kernel/kernel_reference.md).
+
+**Kernel V10 (in development).** The rewrite declares relation as the primitive derived from observation, and energy, connection, and freedom as the ground variables every analysis reads. Most V10 items are still proposed, awaiting Origin and Verifier review.
 
 ---
 
