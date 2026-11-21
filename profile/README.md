@@ -38,10 +38,10 @@ The kernel expresses energy, freedom and connection as tunneling, superposition 
 
 | | |
 |---|---|
-| Package | `abr-kernel` **10.0.0** (crate `abr_kernel`), Rust, no external dependencies, Apache-2.0 |
+| Package | `abr-kernel` **10.1.0** (crate `abr_kernel`), Rust, no external dependencies, Apache-2.0 |
 | V10 | Ground variables (`ground_variables.rs`), relational field (`relational_field.rs`), parameter-free circulation Ξ. The weighting parameters ρ and χ are retired from V10 |
-| V9 record | V9 operators and readers unchanged and retained for V9 work; every transition kept in the commit history |
-| Tests | 153 passing, including a clean-room build; synthetic fixtures only |
+| V9 record | V9 operators and readers unchanged and kept in place behind the `v9` Cargo feature (off by default), so V10 work uses only V10 forms (W13); every transition kept in the commit history |
+| Tests | 68 passing in the default (V10) build, 153 with `--features v9`, including a clean-room build; synthetic fixtures only |
 | Next | Invariant tests against registered data (structural consistency, I-SC) |
 
 ```
